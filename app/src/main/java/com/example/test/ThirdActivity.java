@@ -52,12 +52,10 @@ public class ThirdActivity extends AppCompatActivity {
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        // ここに３秒後に実行したい処理
                         Intent intent = new Intent(ThirdActivity.this, MainActivity.class);
                         startActivity(intent);
-
                     }
-                }, 500);
+                }, 1000);
             }
         });
     }
